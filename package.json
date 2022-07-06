@@ -22,6 +22,9 @@
     "url": "https://github.com/yisibell/vue-use-toolkit.git"
   },
   "homepage": "https://github.com/yisibell/vue-use-toolkit/README.md",
+  "bugs": {
+    "url": "https://github.com/yisibell/vue-use-toolkit/issues"
+  },
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
