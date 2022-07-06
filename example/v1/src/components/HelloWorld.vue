@@ -2,11 +2,11 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <div>
-      <span>总时间：{{ current.total }}</span>
-      <span>剩余天数：{{ current.days }}</span>
-      <span>剩余小时：{{ current.hours }}</span>
-      <span>剩余分钟：{{ current.minutes }}</span>
-      <span>剩余秒数：{{ current.seconds }}</span>
+      <span>总时间：{{ current.total }}, </span>
+      <span>剩余天数：{{ current.days }}, </span>
+      <span>剩余小时：{{ current.hours }}, </span>
+      <span>剩余分钟：{{ current.minutes }}, </span>
+      <span>剩余秒数：{{ current.seconds }}, </span>
       <span>剩余毫秒：{{ current.milliseconds }}</span>
     </div>
   </div>
