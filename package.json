@@ -1,0 +1,57 @@
+{
+  "name": "vue-use-toolkit",
+  "version": "1.0.0",
+  "description": "A useful toolkit of Vue composition API functions.",
+  "main": "dist/vue-use-toolkit.cjs.js",
+  "module": "dist/vue-use-toolkit.esm.js",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "elenh",
+    "email": "yisiwings@163.com"
+  },
+  "keywords": [
+    "vue",
+    "vue-use",
+    "vue-composition-api",
+    "toolkit",
+    "helper"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yisibell/vue-use-toolkit.git"
+  },
+  "homepage": "https://github.com/yisibell/vue-use-toolkit/README.md",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "release": "npm publish --access=public"
+  },
+  "dependencies": {
+    "@vue/composition-api": "^1.7.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "rollup": "^2.48.0",
+    "rollup-plugin-dts": "^3.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4",
+    "vue": "^2.6.14"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.14"
+  },
+  "engines": {
+    "node": ">= 12.x"
+  }
+}
