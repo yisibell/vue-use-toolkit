@@ -1,4 +1,4 @@
-import { ComputedRef } from '@vue/composition-api';
+import { ComputedRef } from 'vue';
 
 type CurrentTime = {
   days: number

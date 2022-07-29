@@ -1,11 +1,5 @@
-import {
-  ref,
-  computed,
-  onActivated,
-  onDeactivated,
-  onBeforeUnmount,
-} from '@vue/composition-api'
-import type { ComputedRef } from '@vue/composition-api'
+import { ref, computed, onActivated, onDeactivated, onBeforeUnmount } from 'vue'
+import type { ComputedRef } from 'vue'
 import { raf, cancelRaf, inBrowser } from './utils'
 
 export type CurrentTime = {
