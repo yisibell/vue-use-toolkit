@@ -19,7 +19,7 @@ $ npm i vue-use-toolkit
 
 ## For Vue(^2.7)
 
-`vue-use-toolkit@^2.x` 将移除对 <a href="https://github.com/vuejs/composition-api">Vue Composition API</a> 的依赖，直接使用 `vue 2.7` 内置的**组合式API**。
+`vue-use-toolkit@^2.x` 已移除对 <a href="https://github.com/vuejs/composition-api">@vue/composition-api</a> 的依赖，而是直接使用 `vue 2.7` 内置的 **组合式API**。
 
 # Features
 
