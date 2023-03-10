@@ -18,6 +18,13 @@
 - <a href="./docs/use-count-down.md">useCountDown</a>
 - <a href="./docs/use-storage.md">useStorage</a>
 
+# Package
+
+| Version | Support Vue version |
+| :---: | :---: |
+| `^1.1.0` | `~2.6.14` and lower |
+| `^2.1.0` | `^2.7.14` and above |
+
 # Installation
 
 ``` bash
