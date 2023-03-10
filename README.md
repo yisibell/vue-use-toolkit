@@ -1,6 +1,22 @@
+
+<p align="center">
+  <a href="https://www.npmjs.org/package/vue-use-toolkit">
+    <img src="https://img.shields.io/npm/v/vue-use-toolkit.svg">
+  </a>
+  <a href="https://npmcharts.com/compare/vue-use-toolkit?minimal=true">
+    <img src="https://img.shields.io/npm/dm/vue-use-toolkit.svg">
+  </a>
+  <br>
+</p>
+
 # vue-use-toolkit
 
 🛠️ A useful toolkit of Vue composition API functions.
+
+# Features
+
+- <a href="./docs/use-count-down.md">useCountDown</a>
+- <a href="./docs/use-storage.md">useStorage</a>
 
 # Installation
 
@@ -21,10 +37,6 @@ $ npm i vue-use-toolkit
 
 `vue-use-toolkit@^2.x` 已移除对 <a href="https://github.com/vuejs/composition-api">@vue/composition-api</a> 的依赖，而是直接使用 `vue 2.7` 内置的 **组合式API**。
 
-# Features
-
-- <a href="./docs/use-count-down.md">useCountDown</a>
-- <a href="./docs/use-storage.md">useStorage</a>
 
 # Change Log
 
