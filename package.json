@@ -1,6 +1,6 @@
 {
   "name": "vue-use-toolkit",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "A useful toolkit of Vue composition API functions.",
   "main": "dist/vue-use-toolkit.cjs.js",
   "module": "dist/vue-use-toolkit.esm.js",
