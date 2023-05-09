@@ -1,5 +1,16 @@
 import { ComputedRef } from 'vue';
 
+interface StorageInstance<T = any> {
+  getStorage(key: string): T | ''
+  setStorage(key: string, value: T): void
+  removeStorage(key: string): void
+  clearStorage(): void
+}
+
+type UseStorage = <T = any>(persistent?: boolean) => StorageInstance<T>
+type UseSessionStorage = <T = any>() => StorageInstance<T>
+type UseLocalStorage = <T = any>() => StorageInstance<T>
+
 type CurrentTime = {
   days: number
   hours: number
@@ -23,17 +34,11 @@ type CountDown = {
   current: ComputedRef<CurrentTime>
 }
 
-interface StorageInstance {
-  getStorage(key: string): any
-  setStorage(key: string, value: any): void
-  removeStorage(key: string): void
-  clearStorage(): void
-}
+type UseCountDown = (opts: UseCountDownOptions) => CountDown
 
-declare function useCountDown(options: UseCountDownOptions): CountDown
-
-declare function useStorage(persistent?: boolean): StorageInstance
-declare function useSessionStorage(): StorageInstance
-declare function useLocalStorage(): StorageInstance
+declare const useCountDown: UseCountDown
+declare const useStorage: UseStorage
+declare const useSessionStorage: UseSessionStorage
+declare const useLocalStorage: UseLocalStorage
 
 export { useCountDown, useLocalStorage, useSessionStorage, useStorage };
