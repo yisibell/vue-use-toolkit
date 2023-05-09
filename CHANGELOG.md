@@ -1,5 +1,18 @@
 # CHANGE LOG
 
+## v2.2.1
+
+[compare changes](https://github.com/yisibell/vue-use-toolkit/compare/v2.2.0...v2.2.1)
+
+
+### 🏡 Chore
+
+  - **types:** Publish types ([4a022b4](https://github.com/yisibell/vue-use-toolkit/commit/4a022b4))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.2.0
 
 [compare changes](https://github.com/yisibell/vue-use-toolkit/compare/v2.1.0...v2.2.0)
