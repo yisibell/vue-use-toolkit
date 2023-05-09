@@ -1,29 +1,10 @@
 import { ref, computed, onActivated, onDeactivated, onBeforeUnmount } from 'vue'
-import type { ComputedRef } from 'vue'
 import { raf, cancelRaf, inBrowser } from './utils'
-
-export type CurrentTime = {
-  days: number
-  hours: number
-  total: number
-  minutes: number
-  seconds: number
-  milliseconds: number
-}
-
-export type UseCountDownOptions = {
-  time: number
-  millisecond?: boolean
-  onChange?: (current: CurrentTime) => void
-  onFinish?: () => void
-}
-
-export type CountDown = {
-  start: () => void
-  pause: () => void
-  reset: (totalTime: number) => void
-  current: ComputedRef<CurrentTime>
-}
+import type {
+  CurrentTime,
+  UseCountDownOptions,
+  CountDown,
+} from '../interfaces/countdown'
 
 const SECOND = 1000
 const MINUTE = 60 * SECOND

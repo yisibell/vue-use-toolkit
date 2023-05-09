@@ -1,20 +1,13 @@
-export interface StorageInstance {
-  getStorage(key: string): any
-  setStorage(key: string, value: any): void
-  removeStorage(key: string): void
-  clearStorage(): void
-}
+import type { UseStorage } from '../interfaces/storage'
 
-export const useStorage: (persistent?: boolean) => StorageInstance = (
-  persistent
-) => {
+export const useStorage: UseStorage = <T = any>(persistent?: boolean) => {
   const storage = () =>
     persistent ? window.localStorage : window.sessionStorage
 
   /**
    * 获取
    */
-  const getStorage = (key: string) => {
+  const getStorage = (key: string): T | '' => {
     if (!key || !storage()) return ''
 
     try {
@@ -29,7 +22,7 @@ export const useStorage: (persistent?: boolean) => StorageInstance = (
   /**
    * 设置
    */
-  const setStorage = (key: string, value: any) => {
+  const setStorage = (key: string, value: T) => {
     if (!storage()) return
     return storage().setItem(key, JSON.stringify(value))
   }
@@ -58,10 +51,10 @@ export const useStorage: (persistent?: boolean) => StorageInstance = (
   }
 }
 
-export const useSessionStorage = () => {
-  return useStorage(false)
+export const useSessionStorage = <T = any>() => {
+  return useStorage<T>(false)
 }
 
-export const useLocalStorage = () => {
-  return useStorage(true)
+export const useLocalStorage = <T = any>() => {
+  return useStorage<T>(true)
 }

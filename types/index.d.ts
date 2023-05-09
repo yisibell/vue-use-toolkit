@@ -1,10 +1,13 @@
-import { UseCountDownOptions, CountDown } from '../src/composables/useCountdown'
-import { StorageInstance } from '../src/composables/useStorage'
+import type {
+  UseLocalStorage,
+  UseSessionStorage,
+  UseStorage,
+} from '../src/interfaces/storage'
+import type { UseCountDown } from '../src/interfaces/countdown'
 
-declare function useCountDown(options: UseCountDownOptions): CountDown
-
-declare function useStorage(persistent?: boolean): StorageInstance
-declare function useSessionStorage(): StorageInstance
-declare function useLocalStorage(): StorageInstance
+declare const useCountDown: UseCountDown
+declare const useStorage: UseStorage
+declare const useSessionStorage: UseSessionStorage
+declare const useLocalStorage: UseLocalStorage
 
 export { useCountDown, useStorage, useSessionStorage, useLocalStorage }
