@@ -1,5 +1,18 @@
 # CHANGE LOG
 
+## v2.2.2
+
+[compare changes](https://github.com/yisibell/vue-use-toolkit/compare/v2.2.1...v2.2.2)
+
+
+### 🏡 Chore
+
+  - **docs:** Countdownbar tips ([543a46b](https://github.com/yisibell/vue-use-toolkit/commit/543a46b))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.2.1
 
 [compare changes](https://github.com/yisibell/vue-use-toolkit/compare/v2.2.0...v2.2.1)
