@@ -15,7 +15,7 @@
 
 # Features
 
-- <a href="./docs/use-count-down.md">useCountDown</a>
+- <a href="./docs/use-count-down.md">useCountDown</a>. Pls use [countdownbar](https://github.com/vcjs-dev/countdownbar) instead.
 - <a href="./docs/use-storage.md">useStorage</a>
 
 # Package
